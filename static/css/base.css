@@ -2,6 +2,9 @@
     margin:0;
     padding:0;
 }
+li,ul,ol{
+    list-style: none;
+}
 @font-face {
     font-family: 'iconfont';
     src: url('../font/iconfont.eot');
