@@ -3,6 +3,7 @@
     <header_c></header_c>
     <swiper></swiper>
     <entrance></entrance>
+    <footer_c></footer_c>
     
   </div>
 </template>

@@ -12,6 +12,8 @@ import Swiper from './components/Swiper'
 Vue.component(Swiper.name, Swiper);
 import Entrance from './components/Entrance'
 Vue.component(Entrance.name, Entrance);
+import Footer from './components/Footer'
+Vue.component(Footer.name, Footer);
 
 Vue.use(MintUI)
 Vue.config.productionTip = false

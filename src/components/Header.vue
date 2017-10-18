@@ -1,31 +1,30 @@
 <template>
-  <div class="header">
-    <div id="header">
-      <a href="#" @click="nav"><i class="iconfont">&#xe623;</i></a>
+  <div class="header_wrap">
+    
+    <div class="header">
+      <a href="#" @click="nav" ><i class="iconfont">&#xe621;</i></a>
+      <h1 class="title">天猫超市</h1>
       <div class="city">
-        <h1 class="title">天猫超市</h1>
-        <div class="city_selector">
-          <span>大连</span>
-        </div>
+          <span>大连<i class="iconfont">&#xe605;</i></span>
       </div>
-      <a href="" class="tinycart"><i class="iconfont">&#xe501;</i></a>
+      <a href="#" ><i class="iconfont">&#xe507;</i></a>
     </div>
-
     <mt-popup v-model="dis" position="left" class="nav_wrap">
-      <div class="nav" v-model="dis" position="left">
+      <div class="nav">
         <div class="title">
           <h2 class="logo">天猫超市</h2>
           <p>在乎每件生活小事</p>
         </div>
+
         <div class="count">
             <a href="#" class="item"><i class="iconfont">&#xe614;</i>超市首页</a>
             <a href="#" class="item"><i class="iconfont">&#xe60b;</i>搜索</a>
-          <div class="categories"><i class="iconfont">&#xe700;</i><a href="#" class="all">全部分类</a>
+          <div class="categories"><i class="iconfont">&#xe700;</i>
+            <a href="#" class="all">全部分类</a>
             <a href="" class="category">糖果饼干</a>
             <a href="" class="category">个人洗护</a>
           </div>
         </div>  
-      </div>
       
         <div class="foot">
         <ul>
@@ -38,8 +37,11 @@
           <li><a href="#">资质凭证</a></li>
         </ul>
         </div>
-      
+
+      </div>
+    
     </mt-popup>
+     
   </div>
 
 </template>
@@ -64,90 +66,85 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.header{
-  width:100%;
-  height:44px;
+.header_wrap{
+  width:3.2rem;
 }
-.header #header{
-    font-size: 12px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    box-shadow: 0 1px 0 rgba(0,0,0,.05), 0 0.5px 0 rgba(0,0,0,.09);
-    z-index: 998;
-    line-height: 44px;
-    background: #fff;
-    color: #5F646E;
-    text-align: center;
-    display: flex;
-  }
-.header #header a{
-  text-decoration:none;
+.heade{
+  height: 0.44rem;
+  width: 3.2rem;
 }
-.header #header a .iconfont{
-    left: 35%;
-    height: 44px;
-     display:flex;
+.header_wrap .header {
+  position:fixed;
+  top:0;
+  left:0;
+  height:0.44rem;
+  line-height: 0.44rem;
+  width:3.2rem;
+  background:rgba(100,100,100,0);
+  display: block;
+  font-size: 0.14rem;
 
 }
-.header #header .city .title{
-    color: #1b5;
-    pointer-events: none;
-    font-size: 21px;
-    font-weight: 400;
-
+.header_wrap .header a{
+  width:0.46rem;
+  height:0.44rem;
+  line-height: 0.44rem;
+  text-decoration: none;
+  display: inline-block;
+  float: left;
+  
 }
-.header #header .city .city_selector{
-    display: flex;
+.header_wrap .header a:nth-of-type(2){
+  float: right;
 }
-.header #header .city .city_selector span{
-    border: 1px solid #d8d8d8;
-    border-radius: 4px;
-    padding: 0 14px 0 4px;
-    -webkit-transform: scale(.89);
-    transform: scale(.89);
-    -webkit-transform-origin: 100% 50%;
-    transform-origin: 100% 50%;
-    display: block;
-    line-height: 18px;
-    text-align: center;
+.header_wrap .header a .iconfont{
+  font-size:0.18rem;
+  vertical-align: top;
+  color:#fff;
 }
-.header #header .tinycart{
-    width: 46px;
-    height: 100%;
-    display: block;
-    font-size: 22px;
-    position: absolute;
-    bottom: 0;
-    left: 90%;
-
-  }
-.header #header .tinycart .iconfont{
-    width: 46px;
-    height: 100%;
-    display: block;
-    display: flex;
-    font-size: 22px;
+.header_wrap .header h1{
+  display: inline-block;
+  font-size:0.24rem;
+  width:1.32rem;
+  height:0.44rem;
+  line-height: 0.44rem;
+  float: left;
+  color:#fff;
 }
-.nav_wrap{
+.header_wrap .header .city{
+  display: inline-block;
+  font-size:12px;
+  float: left;
+  color:#fff;
+  height:0.44rem;
+  line-height:0.44rem;
+}
+.header_wrap .header .city span{
+  border:0.01rem solid #d8d8d8;
+  border-radius: 0.04rem;
+  padding:0.02rem 0.02rem 0.02rem 0.02rem;
+  position:relative;
+}
+.header_wrap .header .city span .iconfont{
+    color:#fff;
+    font-size:0.12rem;
+}
+  .nav_wrap{
     position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
+    width:3.2rem;
+    height:2.69rem;
     background:rgba(61,66,69,.1);
     z-index: 1000;
-     display: none;
+    top:0;
+    left:0;
   }
   .nav_wrap .nav{
     position:absolute;
     top:0;
-    bottom: 0;
-    left: 0;
-    right:30.67%;
     background:#fff;
-    z-index: 999;
+    z-index:1000;
+    width:100%;
+    height:388px;
   }
   .nav_wrap .nav .title{
     height:120px;
@@ -159,6 +156,9 @@ export default {
     padding-left:15px;
     color:#fff;
     text-align: left;
+    z-index:1001;
+    box-sizing: border-box;
+    width:100%;
   }
   
   
@@ -171,7 +171,12 @@ export default {
     line-height: 28px;
     font-size:20px;
   }
-  
+  .nav_wrap .nav .count{
+    position:absolute;
+    top:80%;
+    left:0;
+    z-index: 1001;
+  }
   .nav_wrap .nav .count a{
     text-decoration: none;
     cursor: auto;
@@ -227,20 +232,20 @@ export default {
       margin-top:12px;
       margin-right:4px;
    }
-   .foot{
+   .nav_wrap .nav .foot{
     z-index: 1001;
     position: absolute;
-    bottom: 2%;
+    bottom: 0;
     left:0;
 
 
    }
-   .foot ul{
+   .nav_wrap .nav .foot ul{
     display: block;
     width:100%;
     height:20px;
    }
-   .foot li{
+   .nav_wrap .nav .foot li{
     height:20px;
     line-height:20px;
     font-size:12px;
@@ -248,7 +253,7 @@ export default {
     padding:0 10px;
     color:#a2a2a2;
    }
-   .foot li a{
+   .nav_wrap .nav .foot li a{
     text-decoration: none;
     color:#d8d8d8;
    }

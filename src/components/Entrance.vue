@@ -78,25 +78,23 @@ export default {
     background-color: #fff;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
-    padding: 2.67%;
     position: relative;
     z-index: 0;
     display: block;
     overflow: hidden;
     display: block;
     line-height: 1.231;
-    margin-top: 181px;
   }
   .entrance a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20%;
+    width: 0.64rem;
     float: left;
     position: relative;
     text-decoration: none;
     color: inherit;
-    margin-bottom: 10px;
+    margin-bottom: 0.1rem;
   }
   .entrance a div{
     display: block;
@@ -111,16 +109,16 @@ export default {
     right: 0;
     bottom: 0;
     width: 100%;
-    height: 60px;
+    height: 0.47rem;
     display: block;
     border-radius: 50%;
   }
   .entrance a span{
     color: #2F2F2F;
-    font-size: 12px;
+    font-size:0.12rem;
     line-height: 1;
     display: block;
-    margin-top: 68px;
+    margin-top: 0.68rem;
   }
 
 </style>
